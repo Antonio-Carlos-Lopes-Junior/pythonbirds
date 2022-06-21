@@ -22,7 +22,7 @@ O   L
   S
 
     Exemplo:
-    # Testando motor
+    >>> # Testando motor
     >>> motor = Motor()
     >>> motor.velocidade()
     0
@@ -41,7 +41,7 @@ O   L
     >>> motor.frear()
     >>> motor.velocidade()
     0
-    # Testando direção
+    >>> # Testando direção
     >>> direcao = Direcao()
     >>> direcao.valor()
     'Norte'
