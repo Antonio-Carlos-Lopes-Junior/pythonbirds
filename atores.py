@@ -97,7 +97,7 @@ class Passaro(Ator):
 
         :return: booleano
         """
-        return not self._tempo_de_lancamento is None
+        return self._tempo_de_lancamento is not None
 
     def colidir_com_chao(self):
         """
@@ -105,7 +105,7 @@ class Passaro(Ator):
         o status dos Passaro deve ser alterado para destruido, bem como o seu caracter
 
         """
-        if self.y <= 1:
+        if self.y <= 0:
             self.status = DESTRUIDO
 
     def calcular_posicao(self, tempo):
