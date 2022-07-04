@@ -72,12 +72,6 @@ class CarroTestCase(TestCase):
         carro = Carro(direcao, motor)
         self.assertEqual('Norte', carro.calcular_direcao())
 
-    def teste_direcao_inicial_carro(self):
-        direcao = Direcao()
-        motor = Motor()
-        carro = Carro(direcao, motor)
-        self.assertEqual('Norte', carro.calcular_direcao())
-
     def teste_girar_a_direita_carro(self):
         direcao = Direcao()
         motor = Motor()
